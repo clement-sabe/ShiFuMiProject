@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'turtlesregular';
+  src: url('../fonts/turtles-webfont.woff2') format('woff2'),
+    url('../fonts/turtles-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* drag and drop */
+#dragDrop {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 100%
+}
+
+#battleField {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#cardField {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.block {
+  width: 10em;
+  height: 10em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.card {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-color: rgb(112, 112, 112, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 18px 18px 18px -5px black;
+  border-radius: 18px 18px 18px 18px;
+}
+
+#emptyBlock {
+  display: flex;
+  box-shadow: 18px 18px 18px -5px black;
+  background-color: rgb(225, 225, 225, 0.5);
+  border: 5px dashed red;
+  border-radius: 18px 18px 18px 18px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: 'Concert One', cursive;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0.5em 0em 0.5em 0em;
+  border-radius: 22px;
+}
+
+p {
+  font-size: 1.5em;
+  color: green;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  font-family: 'turtlesregular';
+}
+
+.deposed {
+  font-size: 3em;
+}
+
+#firstCard {
+  background-image: url("../img/carapace.png");
+  border: 3px solid black;
+}
+
+#secondCard {
+  background-image: url("../img/pizza.png");
+  border: 3px solid black;
+}
+
+#thirdCard {
+  background-image: url("../img/sai.png");
+  border: 3px solid black;
+}
+
+.answer {
+  background-size: contain;
+}
+
+#counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7em;
+  padding: 0em 1em 0em 1em;
+  font-size: 1.5em;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.7em;
+  padding: 0em 1em 0em 1em;
+  font-size: 0.5em;
+}
+
+#player {
+  margin-left: 45px;
+  width: 335px;
+  height: 325px;
+  border-radius: 18px 18px 18px 18px;
+}
+
+#ordi {
+  margin-right: 45px;
+  width: 220px;
+  height: 275px;
+  border-radius: 18px 18px 18px 18px;
+}
+
+#try {
+  font-family: 'turtlesregular';
+  font-size: 2em;
+  padding: 0.7em;
+  margin: 0em 1em 0em 1em;
+  text-align: center;
+}
+
+#winLose {
+  font-size: 2.5em;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  color: #f2a500;
+  margin-left: 2em;
+  display: flex;
+  justify-content: center;
+  font-family: 'turtlesregular';
+}
+
+body {
+  margin: 0.2em;
+  font-family: 'turtlesregular';
+}
+
+main {
+  border-radius: 18px;
+  border: 3px solid white;
+  background-color: #a1a1a1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'turtlesregular';
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+
+}
+
+#tryAgain {
+  position: sticky;
+  height: 2em;
+  margin: auto;
+  box-shadow: inset 5px 5px 16px #053210,
+    inset -5px -5px 16px #13c03e;
+  background-color: green;
+  border-radius: 22px;
+  border: 5px solid black;
+  color: green;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'turtlesregular';
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  margin-bottom: 50px;
+}
+
+#tryAgain:hover {
+  background-color: red;
+  box-shadow: 0px 0px 0px;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+
+}
+
+#RuleOfTheGame {
+  border-radius: 100px;
+  background: #0c7927;
+  box-shadow: inset 5px 5px 16px #053210,
+    inset -5px -5px 16px #13c03e;
+  border: 5px solid black;
+  position: fixed;
+  color: green;
+  font-family: 'turtlesregular';
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+  font-size: 20px;
+  top: 50px;
+  left: 25px;
+  height: 45px;
+  bottom: 20px;
+}
+
+#RuleOfTheGame:hover {
+  border-radius: 100px;
+  box-shadow: 5px 5px 16px #320505,
+    -5px -5px 16px #c01313;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.5em;
+}
+
+/* Media queries */
+@media screen and (max-width : 830px) {
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  .block {
+    width: 7em;
+    height: 7em;
+    margin: 0.7em 0.2em 0.7em 0.2em;
+  }
+
+  img {
+    width: 6em;
+  }
+
+  #counter {
+    font-size: 1em;
+  }
+}
