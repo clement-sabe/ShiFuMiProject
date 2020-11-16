@@ -120,7 +120,7 @@ p {
   margin-top: 0.7em;
   padding: 0em 1em 0em 1em;
   font-size: 1.5em;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: turtlesregular;
 }
 
 .players {
@@ -239,6 +239,12 @@ footer {
 @media screen and (max-width : 830px) {
   main {
     width: 100%;
+  }
+  p {
+    font-size: 1em;
+    color: green;
+    text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+    font-family: 'turtlesregular';
   }
 
   h1 {
