@@ -6,9 +6,9 @@ $(document).ready(function(){
   var loses = 0;
   var tryCount = 0;
   var userMove = null;
-  var ordiMove = null;
+ 
 
-//............................................Bouton Réinitialiser........................................................
+//...Bouton Réinitialiser...
 $('#tryAgain').click(function(){
   wins = 0;
   loses = 0;
@@ -19,9 +19,9 @@ $('#tryAgain').click(function(){
   $('#randomBlock').css('background-image', 'none');
   $('#winLose').text('');
 });
-//...........................................Rend les réponses draggables..............................................
+//...Rend les réponses draggables...
 $(".answer").draggable({
-  // revert : true,//Renvoie l'élément toujours à sa place
+  revert : true,//Renvoie l'élément toujours à sa place
   snap : '#emptyBlock',//Elles sont attirées par le bloc droppable
   snapMode: 'inner' // Permet le magnétisme sur l'interieur du block
 });
@@ -36,24 +36,24 @@ $('#thirdCard').mouseup(function(){
   userMove = 'Ciseaux';
 });
 
-//............................................Rend le "déposez ici" droppable...........................................
+//..Rend le "déposez ici" droppable.
 $( "#emptyBlock" ).droppable({
   accept: ".answer", //Le bloc n'accepte de recevoir que les blocs avec la classe answer
   
   classes: {
       "ui-droppable-active": "ui-state-default"
   },
-  //..............Une fois qu'on drop un élément dans "emptyBlock", cette fonction se déclenche............
+  //...Une fois qu'on drop un élément dans "emptyBlock", cette fonction se déclenche.....
   drop:function(){
       //Choisis au hasard une valeur dans le tableau déclaré plus haut
       var ordiMove = array[Math.floor(array.length * Math.random())];
       //Met les images correspondantes au choix de l'ordi sur randomBlock
       if (ordiMove == "Pierre"){
-          $('#randomBlock').css({'background-image': 'url(assets/img/carapace.png)', 'background-size' : 'contain'});
+          $('#randomBlock').css({'background-image': 'url(assets/img/carapace.png)', 'background-size' : 'contain' , 'background-repeat': 'no-repeat' ,'background-position': 'center' });
       } else if (ordiMove == "Feuille"){
-          $('#randomBlock').css({'background-image': 'url(assets/img/pizza.png)', 'background-size' : 'contain'});
+          $('#randomBlock').css({'background-image': 'url(assets/img/pizza.png)', 'background-size' : 'contain' , 'background-repeat': 'no-repeat' ,'background-position': 'center'});
       } else if (ordiMove == "Ciseaux"){
-          $('#randomBlock').css({'background-image': 'url(assets/img/sai.png)', 'background-size' : 'contain'});
+          $('#randomBlock').css({'background-image': 'url(assets/img/sai.png)', 'background-size' : 'contain' , 'background-repeat': 'no-repeat' ,'background-position': 'center'});
       }
       //Conditions
       //SI USER = ORDI, alerte Egalité, +1 compteur d'essais
