@@ -21,9 +21,11 @@ $('#tryAgain').click(function(){
 });
 //...Rend les réponses draggables...
 $(".answer").draggable({
-  revert : true,//Renvoie l'élément toujours à sa place
+  revert : true , //Renvoie l'élément toujours à sa place
+  revertDuration: 2000,
   snap : '#emptyBlock',//Elles sont attirées par le bloc droppable
-  snapMode: 'inner' // Permet le magnétisme sur l'interieur du block
+  snapMode: 'inner',
+  snapDuration: 4000// Permet le magnétisme sur l'interieur du block
 });
 //Quand le clic de la souris se relève, ça fait passer userMove de null à "Pierre", "Feuille" ou "Ciseaux" selon le bloc qui est cliqué
 $('#firstCard').mouseup(function(){
@@ -112,67 +114,3 @@ $( "#emptyBlock" ).droppable({
   }
 });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-// $(function () {
-//   $(".answer").draggable({
-//     revert: true,//Renvoie l'élément toujours à sa place
-//     snap: '#emptyBlock',//Elles sont attirées par le bloc droppable
-//     snapMode: 'inner' // Permet le magnétisme sur l'interieur du block
-
-//   });
-// });
-
-// $("#emptyBlock").droppable({
-//   accept: ".answer", //Le bloc n'accepte de recevoir que les blocs avec la classe answer
-  
-
-//   // Permet le magnétisme sur l'interieur du block
-// });
-
-
-// const buttons = document.querySelectorAll(".answer");
-// // const resultat = document.querySelector(".resultat");
-
-// for (let i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener('droppable', function () {
-//     const joueur = buttons[i].innerHTML;
-//     const robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
-//     let resultat = "";
-//     // resultat.innerHTML = joueur + "       " + robot;
-//     if (joueur === robot) {
-//       resultat = "Egalité";
-//     }
-//     else if ((joueur === "Pierre" && robot === "Ciseaux") || (joueur === "Ciseaux" && robot === "Feuilles") || (joueur === "Feuilles") && (robot === "Pierre")) {
-//       resultat = "Gagné";
-//     }
-//     else {
-//       resultat = "Perdu";
-//     }
-//     document.querySelector("#winLose").innerHTML = `
-  
-  <p>${resultat}</p>
-`  ;
-
-//     document.querySelector("#randomBlock").innerHTML = `
-//   <p> Robot : ${robot} </p>
-//   `  ;
-
-//     document.querySelector("#dropHere").innerHTML = `
-//   <p> Joueur : ${joueur} </p>
-//   `  ;
-
-//   });
-
-
-// }

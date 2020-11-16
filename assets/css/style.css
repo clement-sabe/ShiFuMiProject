@@ -28,7 +28,9 @@ body {
   justify-content: center;
 
 }
-
+.title{
+  margin-bottom:-170px;
+}
 #cardField {
   width: 100%;
   display: flex;
@@ -59,7 +61,7 @@ body {
   display: flex;
   box-shadow: 18px 18px 18px -5px black;
   background-color: rgb(225, 225, 225, 0.5);
-  border: 5px dashed red;
+  border: 5px dashed green;
   border-radius: 18px 18px 18px 18px;
   justify-content: center;
   align-items: center;
@@ -133,15 +135,15 @@ p {
 
 #player {
   margin-left: 45px;
-  width: 335px;
-  height: 325px;
+  width: 355px;
+  height: 425px;
   border-radius: 18px 18px 18px 18px;
 }
 
 #ordi {
   margin-right: 45px;
-  width: 220px;
-  height: 275px;
+  width: 320px;
+  height: 375px;
   border-radius: 18px 18px 18px 18px;
 }
 
