@@ -15,7 +15,7 @@ body {
 }
 
 /* drag and drop */
-#dragDrop {
+#drop {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@ body {
   height: 100%
 }
 
-#battleField {
+#game {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,14 +33,18 @@ body {
 .title {
   margin-bottom: -170px;
 }
+<<<<<<< HEAD
 
 #cardField {
+=======
+#shifumi {
+>>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.block {
+.bloc {
   width: 10em;
   height: 10em;
   margin: 1em;
@@ -60,7 +64,7 @@ body {
   border-radius: 18px 18px 18px 18px;
 }
 
-#emptyBlock {
+#empty {
   display: flex;
   box-shadow: 18px 18px 18px -5px black;
   background-color: rgb(225, 225, 225, 0.5);
@@ -94,28 +98,28 @@ p {
   font-size: 3em;
 }
 
-#firstCard {
+#carapace {
   background-image: url("../img/carapace.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 3px solid black;
 }
 
-#secondCard {
+#pizza {
   background-image: url("../img/pizza.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 3px solid black;
 }
 
-#thirdCard {
+#sai {
   background-image: url("../img/sai.png");
   background-repeat: no-repeat;
   background-position: center;
   border: 3px solid black;
 }
 
-.answer {
+.reply {
   background-size: contain;
 }
 
@@ -150,7 +154,7 @@ p {
   border-radius: 18px 18px 18px 18px;
 }
 
-#try {
+#test {
   font-family: 'turtlesregular';
   font-size: 2em;
   padding: 0.7em;
@@ -185,7 +189,7 @@ main {
   margin: auto;
 }
 
-#tryAgain {
+#reset {
   position: sticky;
   height: 2em;
   margin: auto;
@@ -202,7 +206,7 @@ main {
   margin-bottom: 50px;
 }
 
-#tryAgain:hover {
+#reset:hover {
   background-color: red;
   box-shadow: 0px 0px 0px;
   text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
@@ -240,7 +244,7 @@ footer {
   margin-left: 100px;
 }
 
-#randomBlock {
+#random {
   background-image: no-repeat;
 }
 
@@ -261,13 +265,17 @@ footer {
     width: 100%;
   }
 
-  .block {
+  .bloc {
     width: 7em;
     height: 7em;
     margin: 0.7em 0.2em 0.7em 0.2em;
   }
+<<<<<<< HEAD
 
   #emptyBlock {
+=======
+  #empty{
+>>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622
     width: 6em;
     height: 6em;
     margin: 0.7em 0.2em 0.7em 0.2em;
@@ -287,8 +295,13 @@ footer {
     height: 112px;
     border-radius: 18px 18px 18px 18px;
   }
+<<<<<<< HEAD
 
   #ordi {
+=======
+  
+  #shredder {
+>>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622
     margin-right: 45px;
     width: 75px;
     height: 90px;

@@ -36,33 +36,34 @@
     </div>
     <!-- Drag and drop -->
     <div class="players">
-      <img id="player" src="assets/img/ttnm.png">
-      <div id="dragDrop">
+      
+      <img id="player" onmouseover="setNewImage()" onmouseout= "setOldImage()" src="assets/img/ttnm.png" alt="lune" width="900">
+      <div id="drop">
 
-        <div id="battleField">
+        <div id="game">
           <!--Nombre de victoires-->
-          <div class="block" id="emptyBlock">
+          <div class="bloc" id="empty">
 
-            <p id="dropHere" class="deposed">Déposer ici</p>
+            <p  class="deposed">Déposer ici</p>
           </div>
-          <div class="block card" id="randomBlock">
+          <div class="bloc card" id="random">
           </div>
           <!--Nombre de défaites-->
         </div>
-        <div id="cardField">
-          <div class="block card answer" id="firstCard">
+        <div id="shifumi">
+          <div class="bloc card reply" id="carapace">
           </div>
-          <div class="block card answer" id="secondCard">
+          <div class="bloc card reply" id="pizza">
           </div>
-          <div class="block card answer" id="thirdCard">
+          <div class="bloc card reply" id="sai">
           </div>
         </div>
       </div>
-      <img id="ordi" src="assets/img/shredder.png">
+      <img id="shredder" src="assets/img/shredder.png">
     </div>
 
-    <p id="try"> </p>
-    <button type="reset" name="button" id="tryAgain" hidden>Réinitialiser!</button>
+    <p id="test"> </p>
+    <button type="reset" name="button" id="reset" hidden>Réinitialiser!</button>
     <footer>
       <p>&copy; AHMED - ADRIEN - HUGO - CLÉMENT FORMATION WEB DESIGNER LA MANU 2020</p>
     </footer>
