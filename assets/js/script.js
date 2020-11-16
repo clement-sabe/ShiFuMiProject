@@ -35,7 +35,7 @@ for (let i = 0; i < buttons.length; i++) {
     }
     document.querySelector("#winLose").innerHTML = `
   
-  <p> Résultat : ${resultat}</p>
+  <p>${resultat}</p>
 `  ;
 
     document.querySelector("#randomBlock").innerHTML = `
