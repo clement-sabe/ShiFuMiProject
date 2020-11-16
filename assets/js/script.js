@@ -21,7 +21,8 @@ $('#tryAgain').click(function(){
 });
 //...Rend les réponses draggables...
 $(".answer").draggable({
-  revert : true,//Renvoie l'élément toujours à sa place
+  revert : true , //Renvoie l'élément toujours à sa place
+  revertDuration: 200,
   snap : '#emptyBlock',//Elles sont attirées par le bloc droppable
   snapMode: 'inner' // Permet le magnétisme sur l'interieur du block
 });
