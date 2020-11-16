@@ -91,16 +91,22 @@ p {
 
 #firstCard {
   background-image: url("../img/carapace.png");
+  background-repeat: no-repeat;
+  background-position: center;
   border: 3px solid black;
 }
 
 #secondCard {
   background-image: url("../img/pizza.png");
+  background-repeat: no-repeat;
+  background-position: center;
   border: 3px solid black;
 }
 
 #thirdCard {
   background-image: url("../img/sai.png");
+  background-repeat: no-repeat;
+  background-position: center;
   border: 3px solid black;
 }
 
@@ -204,13 +210,11 @@ main {
   box-shadow: inset 5px 5px 16px #053210,
     inset -5px -5px 16px #13c03e;
   border: 5px solid black;
-
   color: green;
   font-family: 'turtlesregular';
   text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
   font-size: 20px;
- 
-  left: 25px;
+   left: 25px;
   height: 45px;
   bottom: 20px;
 }
@@ -280,6 +284,19 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 0.2em;
-   
-  }
+     }
+     #RuleOfTheGame {
+      border-radius: 100px;
+      background: #0c7927;
+      box-shadow: inset 5px 5px 16px #053210,
+        inset -5px -5px 16px #13c03e;
+      border: 5px solid black;
+      color: green;
+      font-family: 'turtlesregular';
+      text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+      font-size: 15px;
+       left: 25px;
+      height: 45px;
+      bottom: 20px;
+    }
 }
