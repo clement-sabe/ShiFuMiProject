@@ -113,7 +113,6 @@ $( "#empty" ).droppable({
   }
 });
 });
-<<<<<<< HEAD
 
 
 $(document).ready(function(){
@@ -133,11 +132,9 @@ $(document).ready(function(){
     $("#audio-player")[0].pause();
   });
 });
-=======
 function setNewImage(){
   document.getElementById("player").src = "assets/img/tthover.png"}
   $('#player').css('height', '425px', 'width', '355px');
 function setOldImage(){
   document.getElementById("player").src = "assets/img/ttnm.png"
 }
->>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622

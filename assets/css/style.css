@@ -33,12 +33,7 @@ body {
 .title {
   margin-bottom: -170px;
 }
-<<<<<<< HEAD
-
-#cardField {
-=======
 #shifumi {
->>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622
   width: 100%;
   display: flex;
   justify-content: center;
@@ -270,12 +265,7 @@ footer {
     height: 7em;
     margin: 0.7em 0.2em 0.7em 0.2em;
   }
-<<<<<<< HEAD
-
-  #emptyBlock {
-=======
   #empty{
->>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622
     width: 6em;
     height: 6em;
     margin: 0.7em 0.2em 0.7em 0.2em;
@@ -295,13 +285,8 @@ footer {
     height: 112px;
     border-radius: 18px 18px 18px 18px;
   }
-<<<<<<< HEAD
-
-  #ordi {
-=======
   
   #shredder {
->>>>>>> a07e821a08e2c4e68f94893a962e14465eb88622
     margin-right: 45px;
     width: 75px;
     height: 90px;
