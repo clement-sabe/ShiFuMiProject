@@ -113,3 +113,10 @@ $( "#empty" ).droppable({
   }
 });
 });
+
+function setNewImage(){
+  document.getElementById("player").src = "assets/img/tthover.png"}
+  $('#player').css('height', '425px', 'width', '355px');
+function setOldImage(){
+  document.getElementById("player").src = "assets/img/ttnm.png"
+}
