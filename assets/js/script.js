@@ -64,6 +64,7 @@ $( "#empty" ).droppable({
           $('#winLose').text('Egalité!');
           $('#winLose').css('color', '#f2a500');
           $('#shredder').attr('src', 'assets/img/shrd=.png');
+          $('#player').attr('src', 'assets/img/ttnm-egality.png');
           //SINON SI USER = Pierre et ORDI = Ciseaux, alerte Gagné, +1  compteur d'essais, +1 compteur gagné
       } else if (userMove == 'Pierre' && ordiMove == 'Ciseaux'){
         champions++;
