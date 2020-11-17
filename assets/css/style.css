@@ -6,11 +6,12 @@
   font-style: normal;
 
 }
+
 html,
 body {
-    max-width: 100vw;
-    overflow-x: hidden;
-    height: auto;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: auto;
 }
 
 /* drag and drop */
@@ -28,8 +29,9 @@ body {
   justify-content: center;
 
 }
-.title{
-  margin-bottom:-170px;
+
+.title {
+  margin-bottom: -170px;
 }
 #shifumi {
   width: 100%;
@@ -173,7 +175,7 @@ body {
 main {
   border-radius: 18px;
   border: 3px solid white;
-  background-image: url(../img/the-city-the-moon-roof-donatello-wallpaper-preview.jpg); 
+  background-image: url(../img/the-city-the-moon-roof-donatello-wallpaper-preview.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'turtlesregular';
@@ -216,7 +218,7 @@ main {
   font-family: 'turtlesregular';
   text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
   font-size: 20px;
-   left: 25px;
+  left: 25px;
   height: 45px;
   bottom: 20px;
 }
@@ -246,6 +248,7 @@ footer {
   main {
     width: 100%;
   }
+
   p {
     font-size: 1em;
     color: green;
@@ -275,6 +278,7 @@ footer {
   #counter {
     font-size: 1em;
   }
+
   #player {
     margin-left: 45px;
     width: 112px;
@@ -288,27 +292,93 @@ footer {
     height: 90px;
     border-radius: 18px 18px 18px 18px;
   }
+
   .deposed {
     font-size: 1em;
   }
+
   footer {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     font-size: 0.2em;
-     }
-     #RuleOfTheGame {
-      border-radius: 100px;
-      background: #0c7927;
-      box-shadow: inset 5px 5px 16px #053210,
-        inset -5px -5px 16px #13c03e;
-      border: 5px solid black;
-      color: green;
-      font-family: 'turtlesregular';
-      text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
-      font-size: 15px;
-       left: 25px;
-      height: 45px;
-      bottom: 20px;
-    }
+  }
+
+  #RuleOfTheGame {
+    border-radius: 100px;
+    background: #0c7927;
+    box-shadow: inset 5px 5px 16px #053210,
+      inset -5px -5px 16px #13c03e;
+    border: 5px solid black;
+    color: green;
+    font-family: 'turtlesregular';
+    text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+    font-size: 15px;
+    left: 25px;
+    height: 45px;
+    bottom: 20px;
+  }
+}
+
+/* bouton music */
+.toggle {
+  background: rgba(0,0,0,0.1);
+  width: 77px;
+  height: 22px;
+  position: absolute;
+  left: 20px;
+  top:20px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 25px;
+  font-family: arial;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.toggle .on, .toggle .off {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  height: 24px;
+  width:29px;
+  transition: all 0.2s;
+}
+.toggle .off {
+  right: 10px;
+  color: red;
+}
+.toggle .on {
+  left: 5px;
+  color:#fff;
+}
+.toggle .slide {
+  transition: all 0.2s ease;
+  position: absolute;
+  /* left: 3px; */
+  top: -1px;
+  bottom: 0;
+  background: green;
+  width: 30px;
+  height: 25px;
+  z-index: 1;
+  border-radius:5px;
+}
+.toggle:hover .slide {
+  /*background: #999;*/
+}
+.toggle.active .slide {
+  left: 36px;
+}
+.toggle.active .off {
+  color:red;
+}
+.toggle.active .on {
+  color:#fff;
+}
+
+.musicplayer{
+	width: 140px;
+  margin: 40px auto 0 auto;
 }
