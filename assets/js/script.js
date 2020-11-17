@@ -63,43 +63,58 @@ $( "#empty" ).droppable({
           champions = champions + 0;
           $('#winLose').text('Egalité!');
           $('#winLose').css('color', '#f2a500');
+          $('#shredder').attr('src', 'assets/img/shrd=.png');
           //SINON SI USER = Pierre et ORDI = Ciseaux, alerte Gagné, +1  compteur d'essais, +1 compteur gagné
       } else if (userMove == 'Pierre' && ordiMove == 'Ciseaux'){
         champions++;
           tryCount++;
-          $('#winLose').text('Gagné!');
+          $('#winLose').text('Cowabunga!');
           $('#winLose').css('color', 'green');
+          $('#player').attr('src', 'assets/img/ttnm.png'); 
+          $('#shredder').attr('src', 'assets/img/shrd-.png');
           //SINON SI USER = Feuille et ORDI = Pierre, alerte Gagné, +1  compteur d'essais, +1 compteur gagné
       } else if (userMove == 'Feuille' && ordiMove == 'Pierre'){
         champions++;
           tryCount++;
-          $('#winLose').text('Gagné!');
+          $('#winLose').text('Cowabunga!');
           $('#winLose').css('color', 'green');
+          $('#player').attr('src', 'assets/img/ttnm.png');
+          $('#shredder').attr('src', 'assets/img/shrd-.png');
           //SINON SI USER = Ciseaux et ORDI = Feuille, alerte Gagné, +1  compteur d'essais, +1 compteur gagné
       } else if (userMove == 'Ciseaux' && ordiMove == 'Feuille'){
         champions++;
           tryCount++;
-          $('#winLose').text('Gagné!');
+          $('#winLose').text('Cowabunga!');
           $('#winLose').css('color', 'green');
+          $('#player').attr('src', 'assets/img/ttnm.png');
+          $('#shredder').attr('src', 'assets/img/shrd-.png');
           //SINON SI ORDI = Pierre et USER = Ciseaux, alerte Perdu, +1  compteur d'essais, +1 compteur perdu
       } else if (ordiMove == 'Pierre' && userMove == 'Ciseaux'){
         looser++;
           tryCount++;
           $('#winLose').text('Perdu...');
           $('#winLose').css('color', 'red');
-          //SINON SI ORDI = Feuille et USER = Pierre, alerte Perdu, +1  compteur d'essais, +1 compteur perdu
+          $('#player').attr('src', 'assets/img/tthover.png');
+          $('#shredder').attr('src', 'assets/img/shredder.png');
       } else if (ordiMove == 'Feuille' && userMove == 'Pierre'){
         looser++;
           tryCount++;
           $('#winLose').text('Perdu...');
           $('#winLose').css('color', 'red');
+          $('#player').attr('src', 'assets/img/tthover.png');
+          $('#shredder').attr('src', 'assets/img/shredder.png');
           //SINON SI ORDI = Ciseaux et USER = Feuille, alerte Perdu, +1  compteur d'essais, +1 compteur perdu
       } else if (ordiMove == 'Ciseaux' && userMove == 'Feuille'){
         looser++;
           tryCount++;
           $('#winLose').text('Perdu...');
           $('#winLose').css('color', 'red');
-      }
+          $('#player').attr('src', 'assets/img/tthover.png');
+          $('#shredder').attr('src', 'assets/img/shredder.png');
+          // function setNewImage(){
+          //     document.getElementById("player").src = "assets/img/tthover.png"}};
+          
+          
       //Textes nombre de victoires, nombre de défaites et pourcentage de victoires
       $('#victory').text('Joueur : ' + champions);
       $('#defeat').text('Ordinateur : ' + looser);
@@ -110,7 +125,7 @@ $( "#empty" ).droppable({
       $('.reply').mousedown(function(){
           $('#random').css('background-image', 'none');
       });
-  }
+  }}
 });
 });
 
@@ -131,10 +146,11 @@ $(document).ready(function(){
   $(".off").click(function(){
     $("#audio-player")[0].pause();
   });
+
 });
-function setNewImage(){
-  document.getElementById("player").src = "assets/img/tthover.png"}
-  $('#player').css('height', '425px', 'width', '355px');
-function setOldImage(){
-  document.getElementById("player").src = "assets/img/ttnm.png"
-}
+// function setNewImage(){
+//   document.getElementById("player").src = "assets/img/tthover.png"}
+//   $('#player').css('height', '425px', 'width', '355px');
+// function setOldImage(){
+//   document.getElementById("player").src = "assets/img/ttnm.png"
+// }
